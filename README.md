@@ -76,6 +76,29 @@ This ensures **secure authentication and session handling**.
 The project includes **unit tests and e2e tests** to ensure functionality.
 
 ---
+## 📌 API Documentation
+
+The Easy Generator API provides interactive API documentation using **Swagger**.
+
+You can access it at:
+[https://easygenerator-be-qmmr.onrender.com/api/swagger](https://easygenerator-be-qmmr.onrender.com/api/swagger)
+
+### 🚦 Available Endpoints
+
+#### ✅ Public Endpoints
+- **GET** `/api` → Base route
+- **POST** `/api/auth/register` → Register a new user
+- **POST** `/api/auth/login` → User login (returns JWT token)
+
+#### 🔒 Protected Endpoints
+- **GET** `/api/user/user-info` → Get user information (**requires Bearer JWT token** in the `Authorization` header)
+
+### 🔑 How to Authorize in Swagger
+1. Click the **Authorize** button in the top right of the Swagger UI.
+2. Enter your JWT token  Do not include "Bearer"
+3. Once authorized, you can test all protected routes directly from Swagger.
+
+---
 
 ## 📌 Docker Support & Commands
 The project supports **Docker containerization** using:
